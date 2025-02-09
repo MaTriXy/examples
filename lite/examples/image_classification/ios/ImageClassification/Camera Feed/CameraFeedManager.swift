@@ -16,7 +16,7 @@ import UIKit
 import AVFoundation
 
 // MARK: CameraFeedManagerDelegate Declaration
-protocol CameraFeedManagerDelegate: class {
+protocol CameraFeedManagerDelegate: AnyObject {
 
   /**
   This method delivers the pixel buffer of the current frame seen by the device's camera.
@@ -224,7 +224,7 @@ class CameraFeedManager: NSObject {
     /**Tries to get the default back camera.
      */
     guard let camera  = AVCaptureDevice.default(.builtInWideAngleCamera, for: .video, position: .back) else {
-      fatalError("Cannot find camera")
+      return false
     }
 
     do {

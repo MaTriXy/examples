@@ -40,13 +40,13 @@ only displayed if the confidence score is greater than a defined threshold.
 
 ## Speech command recognition
 
-This application recognizes a set of voice commands using the device's microphone input. When a command is spoken, the corresponding class in the app is highlighted.
+This application recognizes a set of voice commands using the device's
+microphone input. When a command is spoken, the corresponding class in the app
+is highlighted.
 
 <!-- TODO(b/124116863): Add app screenshot and model details. -->
 
 ### Samples
-
-[Android speech commands](examples/speech_commands/android/README.md)
 
 [iOS speech commands](examples/speech_commands/ios/README.md)
 
@@ -82,5 +82,18 @@ Once we have the TensorFlow Lite model, the implementation is very similar to th
 [Android gesture classification](examples/gesture_classification/android/README.md)
 
 [iOS gesture classification](examples/gesture_classification/ios/README.md)
+
+## Model personalization
+
+This app performs model personalization on a live camera feed and displays the
+results in realtime on the screen. The app displays the confidence scores,
+classes and detected bounding boxes for multiple objects that were trained in
+realtime.
+
+<!-- TODO(b/124116863): Add app screenshot and model details. -->
+
+### Samples
+
+[Android Model Personalization](examples/model_personalization/README.md)
 
 

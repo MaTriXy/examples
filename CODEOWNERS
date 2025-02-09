@@ -2,10 +2,11 @@
 # Last matching pattern takes preecedence.
 
 # Default owners for everything in repo.
-*  @wolffg @lamberta @MarkDaoust
+*  @tensorflow/docs-team
+
+# Courses
+/courses/ @josbecker @MarkDaoust
 
 # TF Lite
-/lite/ @dansitu @jdduke
-
-# Community docs
-/community/ @adammichaelwood
+/lite/ @khanhlvg @lu-wang-g @miaout17 @terryheo
+/tensorflow_examples/lite/ @ziyeqinghan @khanhlvg @lu-wang-g @miaout17 @terryheo
